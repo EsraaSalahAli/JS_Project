@@ -1,0 +1,63 @@
+.Winner {
+    width: 200px;
+    height: 100px;
+    background-color: #6950E9;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: white;
+    font-size: 25px;
+    box-shadow: 10px 10px 10px gray , -10px -10px 10px gray;
+    margin-top: 400px; 
+    
+
+}
+
+p {
+    position: relative;
+    top: 22px;
+}
+
+@keyframes anim {
+    0% {
+        background-color:#0D1B40;
+        left: 200px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: #F7C74B;
+        left: 500px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: #6950E9;
+        left: 500px;
+        top: 0px;
+    }
+
+    75% {
+        background-color: #C97CE4;
+        left: 700px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: #82E6E6;
+        left: 1000px;
+        top: 0px;
+    }
+}
+.hide{
+
+        display: none;
+}

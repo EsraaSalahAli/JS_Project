@@ -1,0 +1,31 @@
+.Container {
+    width: 600px;
+    height: 600px;
+    margin: 180px auto;
+     position: relative;
+    left: 35px;
+    top: -60px; 
+}
+
+
+.Cover {
+    width: 97%;
+    height: 50%; 
+    background-image: url(Images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    padding: 20px; 
+}
+.Square {
+    width: 150px;
+    height: 150px;
+    background-color: #d38afdbd;
+    margin: 5px;
+    font-size: 108px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    float: left;
+    border-radius: 10px; 
+}
+
