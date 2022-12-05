@@ -28,57 +28,57 @@ document.addEventListener('DOMContentLoaded', () => {
         [
             {
                 name: 'bird',
-                img: 'images/bird.png'
+                img: 'Memoryimages/bird.png'
             },
 
             {
                 name: 'bird',
-                img: 'images/bird.png'
+                img: 'Memoryimages/bird.png'
             },
 
             {
                 name: 'butterfly',
-                img: 'images/butterfly.png'
+                img: 'Memoryimages/butterfly.png'
             },
             {
                 name: 'butterfly',
-                img: 'images/butterfly.png'
+                img: 'Memoryimages/butterfly.png'
             },
 
             {
                 name: 'cat',
-                img: 'images/cat.png'
+                img: 'Memoryimages/cat.png'
             },
             {
                 name: 'cat',
-                img: 'images/cat.png'
+                img: 'Memoryimages/cat.png'
             },
 
             {
                 name: 'dog',
-                img: 'images/dog.png'
+                img: 'Memoryimages/dog.png'
             },
             {
                 name: 'dog',
-                img: 'images/dog.png'
+                img: 'Memoryimages/dog.png'
             },
 
             {
                 name: 'giraffe',
-                img: 'images/giraffe.png'
+                img: 'Memoryimages/giraffe.png'
             },
             {
                 name: 'giraffe',
-                img: 'images/giraffe.png'
+                img: 'Memoryimages/giraffe.png'
             },
 
             {
                 name: 'lion',
-                img: 'images/lion.png'
+                img: 'Memoryimages/lion.png'
             },
             {
                 name: 'lion',
-                img: 'images/lion.png'
+                img: 'Memoryimages/lion.png'
             }
 
         ]
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function CreateBoard() {
         for (var i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img')
-            card.setAttribute('src', 'images/back.png')
+            card.setAttribute('src', 'Memoryimages/back.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipcard)
             grid.appendChild(card)
@@ -110,13 +110,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cardsChosen[0] == cardsChosen[1]) {
             document.getElementById('success').play();
 
-            // cards[optionOneId].setAttribute('src','images/front.png')
-            // cards[optionTwoId].setAttribute('src','images/front.png')
+            // cards[optionOneId].setAttribute('src','Memoryimages/front.png')
+            // cards[optionTwoId].setAttribute('src','Memoryimages/front.png')
             cardsWon.push(cardsChosen)
 
         } else {
-            cards[optionOneId].setAttribute('src', 'images/back.png')
-            cards[optionTwoId].setAttribute('src', 'images/back.png')
+            cards[optionOneId].setAttribute('src', 'Memoryimages/back.png')
+            cards[optionTwoId].setAttribute('src', 'Memoryimages/back.png')
             document.getElementById('fail').play();
 
         }

@@ -5,7 +5,11 @@
 body {
   font-family: Arial, Tahoma, sans-serif;
 
- background-color: #027373;
+  background: linear-gradient(
+          
+    #027373 0%,
+    #f2e7dc 100%
+  );
 }
 
 .control-buttons {
@@ -44,19 +48,26 @@ h3 {
 }
 
 .name {
-  margin-left: 4%;
+  margin-left: 2%;
+  margin-right: 10%;
 }
 
 .grid {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   flex-wrap: wrap;
-  height: 750px;
+  /* height: 750px; */
   width: 850px;
   margin-left: 25%;
+  justify-content: center;
+}
+
+.grid img{
+  width: 25%;
+  height: 210px;
 }
 
 img {
-  border: 0.5px solid#027373;
+  border: 0.5px solid #027373;
 
 }

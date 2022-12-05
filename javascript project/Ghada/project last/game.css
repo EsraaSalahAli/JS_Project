@@ -1,0 +1,190 @@
+#contianer {
+    width: 630px;
+    height: 590px;
+    border: 5px solid navy;
+    background-color: blue;
+    margin-left: 600px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.divs {
+    position: relative;
+    top: 100px;
+    margin: 1px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    border: 6px solid navy;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.colDiv {
+    height: 900px;
+    position: relative;
+    bottom: 100px;
+    width: 105px;
+   /* padding: 5px;*/
+}
+
+body {
+    cursor: grab;
+    background-color: #027373;
+}
+
+#cursor {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+@keyframes anim1 {
+    0% {
+        left: 0px;
+        top: 0px
+    }
+
+    25% {
+        left: 0px;
+        top: 30px
+    }
+
+    50% {
+        left: 0px;
+        top: 0px
+    }
+
+    75% {
+        left: 0px;
+        top: 30px
+    }
+
+    100% {
+        left: 0px;
+        top: 0px
+    }
+}
+
+.redPlayerNeon {
+    position: relative;
+    font-family: Audiowide;
+    animation: anim1 infinite alternate, neon2 1.5s ease-in-out infinite alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 490px;
+    height: 150px;
+    font-size: 70px;
+    line-height: 1;
+    color: #fff;
+}
+
+#redPlayer {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 50px;
+}
+
+.yellowPlayerNeon {
+    position: relative;
+    font-family: Audiowide;
+    animation: anim1 infinite alternate, neon1 1.5s ease-in-out infinite alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 550px;
+    height: 150px;
+    font-size: 70px;
+    line-height: 1;
+    color: #fff;
+}
+
+#winner {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 50px;
+}
+
+.winnerNeon {
+    position: relative;
+    font-family: Audiowide;
+    animation: anim1 infinite alternate, neon3 1.5s ease-in-out infinite alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 500px;
+    height: 150px;
+    font-size: 70px;
+    line-height: 1;
+    color: #fff;
+}
+
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ede210,
+            0 0 70px #ede210, 0 0 80px #ede210, 0 0 100px #ede210, 0 0 150px #ede210;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ede210,
+            0 0 35px #ede210, 0 0 40px #ede210, 0 0 50px #ede210, 0 0 75px #ede210;
+    }
+}
+
+@keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e60805,
+            0 0 70px #e60805, 0 0 80px #e60805, 0 0 100px #e60805, 0 0 150px #e60805;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60805,
+            0 0 35px #e60805, 0 0 40px #e60805, 0 0 50px #e60805, 0 0 75px #e60805;
+    }
+}
+
+
+@keyframes neon3 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a01770,
+            0 0 70px #a01770, 0 0 80px #a01770, 0 0 100px #a01770, 0 0 150px #a01770;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #a01770,
+            0 0 35px #a01770, 0 0 40px #a01770, 0 0 50px #a01770, 0 0 75px #a01770;
+    }
+}
+
+#ImgPlayMusic
+{
+    position: absolute;
+    font-size: 60px;
+    color: #5c025e;
+    top: 100px;
+    margin-left: 100px;
+}
+#ImgStopMusic
+{
+    position: absolute;
+    font-size: 60px;
+    color: #5c025e;
+    top: 100px;
+    margin-left: 220px;
+}
+
+p {
+    font-size: 90px;
+    text-align: center;
+    color: #fff;
+}

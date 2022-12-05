@@ -1,9 +1,9 @@
 #contianer {
-    width: 630px;
-    height: 590px;
+    width:  640px;
+    height: 520px;
     border: 5px solid navy;
     background-color: blue;
-    margin-left: 600px;
+    margin-left: 500px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +30,7 @@
 }
 
 .colDiv {
-    height: 900px;
+    height: 650px;
     position: relative;
     bottom: 100px;
     width: 105px;
@@ -43,8 +43,8 @@ body {
 }
 
 #cursor {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     position: absolute;
     transition-duration: .2s;
@@ -171,16 +171,16 @@ body {
     position: absolute;
     font-size: 60px;
     color: #5c025e;
-    top: 100px;
-    margin-left: 100px;
+    top: 220px;
+    margin-left: -580px;
 }
 #ImgStopMusic
 {
     position: absolute;
     font-size: 60px;
     color: #5c025e;
-    top: 100px;
-    margin-left: 220px;
+    top: 220px;
+    margin-left: -470px;
 }
 
 p {

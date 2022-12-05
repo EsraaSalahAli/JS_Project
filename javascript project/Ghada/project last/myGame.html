@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomeStyle.css">
+    <title>Connect Four Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <nav style="background-color: #0d0d0d;">
+            <img id="logo" src="images/solo-low-resolution-logo-color-on-transparent-background.png">
+            <span>
+                <a href="Home.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#">Serives</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Team</a>
+                <a href="#contact">Contact</a>
+            </span>
+        </nav>
+
+        <h1>Connect Four Game</h1>
+
+        <section id="about">
+            <div id="contianer">
+            </div>
+            <div id="cursor">
+            </div>
+            <div id="redPlayer"></div>
+            <div id="yellowPlayer"></div>
+            <div id="winner"></div>
+            <audio controls autoplay id="musicWinner" hidden>
+               
+                <source src="winner.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        
+            <a href="#play" onclick="playMusic()"><i id="ImgPlayMusic" class="fa-solid fa-volume-high"></i></a>
+            <a href="#stop" onclick="stopMusic()"><i id="ImgStopMusic"class="fa-solid fa-volume-xmark"></i></a>
+            <audio controls autoplay id="music2" loop hidden>
+                <source src="relax.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <footer style="background-color: #0d0d0d;">
+            © Copyright <span style="font-weight: 900;">Solo</span>. All Rights Reserved
+        </footer>
+    </main>
+
+    <script src="myGame.js"></script>
+</body>
+
+</html>

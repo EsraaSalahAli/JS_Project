@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomeStyle.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img id="logo" src="images/solo-low-resolution-logo-color-on-transparent-background.png">
+            <span>
+                <a href="Home.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#">Serives</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Team</a>
+                <a href="#contact">Contact</a>
+            </span>
+        </nav>
+
+        <h1>Rock Paper Scissors Game</h1>
+
+        <section id="about">
+            <header id="Game">
+                <div id="scoreboard">
+                    <div id="title">
+                        ROCK
+                        <br>
+                        PAPER
+                        <br>
+                        SCISSORS
+                    </div>
+                    <div id="score">
+                        <p>SCORE</p>
+                        <h1>0</h1>
+                    </div>
+                </div>
+
+                <section id="elements">
+                    <div class="rock">
+                        <img src="images/rock2.png" onclick="userPick('rock')">
+                    </div>
+                    <div class="paper">
+                        <img src="images/paper2.png" onclick="userPick('paper')">
+                    </div>
+                    <div class="scissors">
+                        <img src="images/scissors2.png" onclick="userPick('scissors')">
+                    </div>
+                </section>
+                <section id="secondElements">
+                    <div id="userHand">
+                        <h1>YOU PICKED</h1>
+                        <div class="imgContainer">
+                            <img id="userPickimg" src="images/temp.png">
+                        </div>
+                    </div>
+                    <div id="resultContainer">
+                        <div id="decision">
+                            <h1>YOU WIN</h1>
+                            <audio id="win">
+                                <source src="assets/success-fanfare-trumpets-6185.mp3" type="audio/mpeg">
+                            </audio>
+                            <audio id="draw">
+                                <source src="assets/cartoon-jump-6462.mp3" type="audio/mpeg">
+                            </audio>
+                            <audio id="lose">
+                                <source src="assets/failure-drum-sound-effect-2-7184.mp3" type="audio/mpeg">
+                            </audio>
+                            <button id="newGame" onclick="restartGame()">
+                                PLAY AGAIN
+                            </button>
+                        </div>
+                    </div>
+                    <div id="computerHand">
+                        <h1>COMPUTER PICKED</h1>
+                        <div class="imgContainer">
+                            <img id="computerPickimg" src="images/temp.png">
+                        </div>
+                    </div>
+                </section>
+            </header>
+        </section>
+
+        <footer>
+            © Copyright <span style="font-weight: 900;">Solo</span>. All Rights Reserved
+        </footer>
+    </main>
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProjJS.css">
+    <link rel="stylesheet" href="Winner.css"> 
+    <title>XO Game</title>
+</head>
+
+<body>
+    <div class="Cover" id="Cover">
+    <div id="game-div" class="Container">
+        <audio controls id="Audio1" class="hide">
+            <source src="audio/bgsound.wav" type="audio/ogg">
+            <source src="audio/bgsound.mp3" type="audio/mpeg">
+        </audio> 
+        <audio controls class="hide" id="Audio2">
+            <source src="audio/winner.mp3" type="audio/mpeg">
+        </audio> 
+        <div class="Square" id="Square1" onclick="Insert(this.id)"></div>
+        <div class="Square" id="Square2" onclick="Insert(this.id)"></div>
+        <div class="Square" id="Square3" onclick="Insert(this.id)"></div>
+        <div class="Square" id="Square4" onclick="Insert(this.id)"></div>
+        <div class="Square" id="Square5" onclick="Insert(this.id)"></div>
+        <div class="Square" id="Square6" onclick="Insert(this.id)"></div>
+        <div class="Square" id="Square7" onclick="Insert(this.id)"></div>
+        <div class="Square" id="Square8" onclick="Insert(this.id)"></div>
+        <div class="Square" id="Square9" onclick="Insert(this.id)"></div>  
+    </div>
+    <div class="Winner hide" id="winner">
+        <p>Congratulations!🥳</p>
+    </div>
+  </div>
+    
+    <script src="ProjJS.js"></script>
+</body>
+
+</html>

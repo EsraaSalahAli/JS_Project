@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Advent Pro', 'sans-serif';
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    background-color: #027373;
+}
+
+nav a {
+    margin-left: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #F2E7DC;
+    transition: all 1s;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: #0D0D0D;
+}
+
+nav #logo {
+    width: 180px;
+    margin-right: 520px;
+}
+
+nav #bg {
+    width: 90%;
+    position: relative;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0% {
+        top: 10px
+    }
+
+    50% {
+        top: 0px
+    }
+
+    100% {
+        top: 10px
+    }
+}
+
+nav div {
+    width: 90%;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 700;
+    color: #F2E7DC;
+    margin-top: 30px;
+}
+
+nav p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    color: #0D0D0D;
+    margin-bottom: 30px;
+}
+
+main>h1{
+    text-align: center;
+    margin-top: 45px;
+    font-size: 56px;
+    font-weight: 900;
+}
+
+#about {
+    width: 90%;
+    margin: auto;
+    padding: 50px 100px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#about h2 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+#about h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: -9px;
+    left: calc(50% - 60px);
+}
+
+#about h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #027373;
+    bottom: -10px;
+    left: calc(50% - 20px);
+    ;
+}
+
+#about #artc1 {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#about #artc1 p {
+    column-count: 2;
+    column-gap: 60px;
+}
+
+#about #artc1 a {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    width: 150px;
+    padding: 8px 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #027373;
+    border: 2px solid #027373;
+    border-radius: 5px;
+}
+
+#about #artc1 a:hover {
+    background-color: #027373;
+    color: #F2E7DC;
+}
+
+#games {
+    width: 100%;
+    margin: auto;
+    padding: 50px 100px;
+    text-align: center;
+    margin-bottom: 35px;
+    background-color: #027373;
+}
+
+#games h2 {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+#games h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: -413px;
+    left: calc(50% - 60px);
+}
+
+#games h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0D0D0D;
+    bottom: -414px;
+    left: calc(50% - 20px);
+    ;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Layout {
+    background-color: #F2E7DC;
+    width: 30%;
+    height: 450px;
+    margin: 8px;
+    border-radius: 15px;
+    background-image: url(images/Lines-PNG-Photos.png);
+}
+
+.Layout img {
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: all 0.5s;
+}
+
+.Layout img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.Layout h2 a {
+    text-decoration: none;
+    color: #0D0D0D;
+    font-size: 35px;
+}
+
+.Layout h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.Layout h4 span {
+    color: #027373;
+    font-style: oblique;
+}
+
+#contact {
+    width: 90%;
+    margin: auto;
+    padding: 50px 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#contact h2 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+#contact h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: -1565px;
+    left: calc(50% - 60px);
+}
+
+#contact h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #027373;
+    bottom: -1566px;
+    left: calc(50% - 20px);
+    ;
+}
+
+#contact #artc1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.info {
+    width: 45%;
+    margin-right: 200px;
+    background-color: #dfdfdf;
+    padding: 10px;
+    color: #0D0D0D;
+    box-shadow: 2px 13px 27px -1px rgba(0, 0, 0, 0.57);
+    border-top: 3px solid #027373;
+    border-bottom: 3px solid #027373;
+}
+
+.info .address {
+    margin-bottom: 25px;
+}
+
+.info .email {
+    margin-bottom: 25px;
+
+}
+
+.info .phone {
+    margin-bottom: 25px;
+
+}
+
+.info iframe {
+    border: 0;
+    width: 100%;
+    height: 290px;
+    margin-top: 15px;
+}
+
+#form {
+    width: 45%;
+    background-color: #dfdfdf;
+    padding: 20px;
+    color: #0D0D0D;
+    box-shadow: 2px 13px 27px -1px rgba(0, 0, 0, 0.57);
+    border-top: 3px solid #027373;
+    border-bottom: 3px solid #027373;
+}
+
+#form #subject {
+    font-size: 14px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: 'Advent Pro', 'sans-serif';
+}
+
+#form .form-control {
+    font-size: 14px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: 'Advent Pro', 'sans-serif';
+}
+
+#form button {
+    background: #027373;
+    border: 0;
+    padding: 12px 34px;
+    color: #F2E7DC;
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Advent Pro', 'sans-serif';
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #027373;
+    color: #F2E7DC;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    font-size: 22px;
+}
