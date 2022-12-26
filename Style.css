@@ -12,14 +12,15 @@ header {
 
 #Game {
     font-family: 'Rancho', sans-serif;
-    width: 100%;
-    /* height: 1000px; */
+    width: 80%;
+    height: 700px;
     background: radial-gradient(134.34% 134.34% at 50% 0%,
             #027373 0%,
             #029999) 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 
 #scoreboard {

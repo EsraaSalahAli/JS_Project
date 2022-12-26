@@ -34,7 +34,7 @@ function computerPick()
     return randomNumber;
 }
 
-function Result(userHand,randomNumber)
+function Result(randomNumber,userHand)
 {
     if(randomNumber==userHand)
     {
