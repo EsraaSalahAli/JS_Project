@@ -5,7 +5,7 @@ var end = [];
 var smallDives;
 var playerYellow = "Y";
 var playerRed = "R";
-var currentPlayer = playerRed;
+var currentPlayer = playerYellow;
 var con;
 var colDiv;
 var currColumns = [];
@@ -55,18 +55,18 @@ function addingColors() {
     var disc = document.getElementById(smallDives.id);
     console.log("small divs id is " + smallDives.id);
     if (currentPlayer == playerRed) {
-        showYellowPlayer(true)
-        cursor.style.backgroundColor = "red";
+        //showYellowPlayer(true)
+       // cursor.style.backgroundColor = "red";
         disc.classList.add("red");
-        showRedPlayer(true);
+       // showRedPlayer(true);
         cursor.style.backgroundColor = "yellow";
         showYellowPlayer(true)
         currentPlayer = playerYellow;
 
     }
     else {
-        cursor.style.backgroundColor = "yellow";
-        showYellowPlayer(true)
+        //cursor.style.backgroundColor = "yellow";
+        //showYellowPlayer(true)
         disc.classList.add("yellow");
         cursor.style.backgroundColor = "red";
         showRedPlayer(true);
@@ -81,8 +81,8 @@ function addingColors() {
 }
 
 function checkWinner() {
-    for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < cols - 3; c++) {
+    for (var r = 0; r < rows; r++) {
+        for (var c = 0; c < cols - 3; c++) {
             if (con[r][c] != ' ') {
                 if (con[r][c] == con[r][c + 1] && con[r][c + 1] == con[r][c + 2] && con[r][c + 2] == con[r][c + 3]) {
                     play();
@@ -94,8 +94,8 @@ function checkWinner() {
     }
 
 
-    for (let c = 0; c < cols; c++) {
-        for (let r = 0; r < rows - 3; r++) {
+    for (var c = 0; c < cols; c++) {
+        for (var r = 0; r < rows - 3; r++) {
             if (con[r][c] != ' ') {
                 if (con[r][c] == con[r + 1][c] && con[r + 1][c] == con[r + 2][c] && con[r + 2][c] == con[r + 3][c]) {
                     play();
@@ -107,8 +107,8 @@ function checkWinner() {
     }
 
 
-    for (let r = 0; r < rows - 3; r++) {
-        for (let c = 0; c < cols - 3; c++) {
+    for (var r = 0; r < rows - 3; r++) {
+        for (var c = 0; c < cols - 3; c++) {
             if (con[r][c] != ' ') {
                 if (con[r][c] == con[r + 1][c + 1] && con[r + 1][c + 1] == con[r + 2][c + 2] && con[r + 2][c + 2] == con[r + 3][c + 3]) {
                     play();
@@ -119,8 +119,8 @@ function checkWinner() {
         }
     }
 
-    for (let r = 3; r < rows; r++) {
-        for (let c = 0; c < cols - 3; c++) {
+    for (var r = 3; r < rows; r++) {
+        for (var c = 0; c < cols - 3; c++) {
             if (con[r][c] != ' ') {
                 if (con[r][c] == con[r - 1][c + 1] && con[r - 1][c + 1] == con[r - 2][c + 2] && con[r - 2][c + 2] == con[r - 3][c + 3]) {
                     play();
